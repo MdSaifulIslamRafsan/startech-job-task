@@ -1,17 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>startech navbar and Footer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startech Navbar and Footer</title>
+
+    <!-- FontAwesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind CDN link -->
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header>
 
-    </header>
-    <footer>
+    <!-- JS file CDN link (if needed) -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header></header>
 
+    <footer class="bg-[#081621]">
+      <div
+        class="grid p-4 max-w-[1440px] mx-auto grid-cols-1 lg:grid-cols-4 gap-10"
+      >
+        <!-- Support Section -->
+        <div class="space-y-5 col-span-1">
+          <h1
+            class="text-white tracking-[4px] uppercase text-center lg:text-start"
+          >
+            Support
+          </h1>
+          <a
+            href="tel:16793"
+            class="flex gap-5 items-center py-2 px-5 border-2 max-w-xs mx-auto hover:border-[#ef4a23] rounded-full"
+          >
+            <div class="text-white border-r pr-5">
+              <i class="fa-solid text-2xl fa-phone"></i>
+            </div>
+            <div>
+              <p class="text-[#838383] text-xs">9AM - 8PM</p>
+              <h5 class="text-[#ef4a23] text-[20px]">16793</h5>
+            </div>
+          </a>
+          <a
+            href="tel:16793"
+            class="flex gap-5 items-center py-2 px-5 border-2 max-w-xs mx-auto hover:border-[#ef4a23] rounded-full"
+          >
+            <div class="text-white border-r pr-5">
+              <i class="fa-solid text-2xl fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-[#838383] text-xs">Store Locator</p>
+              <h5 class="text-[#ef4a23] text-[20px]">Find Our Stores</h5>
+            </div>
+          </a>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="space-y-5 col-span-2">
+          <h3
+            class="text-white tracking-[4px] uppercase text-center lg:text-start"
+          >
+            About Us
+          </h3>
+          <div>
+            <ul
+            class="flex flex-wrap items-center gap-8 justify-center list-disc marker:text-[#838383] list-inside lg:grid lg:grid-cols-3 lg:gap-2 text-[#838383]"
+          >
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/affiliate-program"
+                >Affiliate Program</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/emi-terms"
+                >EMI Terms</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/about_us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/online-delivery"
+                >Online Delivery</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/privacy"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/warranty-policy"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/refund-policy"
+                >Refund and Return Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/star-point-policy"
+                >Star Point Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/career"
+                >Career</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/blog"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/information/contact"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#ef4a23] hover:underline"
+                href="https://www.startech.com.bd/product/manufacturer"
+                >Brands</a
+              >
+            </li>
+          </ul>
+          
+          
+          </div>
+        </div>
+
+        <!-- Stay Connected Section -->
+        <div class="space-y-5 col-span-1">
+          <h3
+            class="text-white tracking-[4px] uppercase text-center lg:text-start"
+          >
+            Stay Connected
+          </h3>
+          <h5 class="text-white">Star Tech Ltd</h5>
+          <p class="text-[#838383]">
+            Head Office: 28 Kazi Nazrul Islam Ave, Navana Zohura Square, Dhaka
+            1000
+          </p>
+          <p class="text-[#838383]">
+            Email:
+            <a
+              class="text-[#ef4a23] hover:underline"
+              href="mailto:webteam@startechbd.com"
+              >webteam@startechbd.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+      <div
+        class="lg:flex text-center text-white p-4 max-w-[1440px] mx-auto border-y justify-between"
+      >
+        <div class="lg:flex items-center space-y-5 lg:space-y-0 gap-5">
+          <h5 class="text-[#838383]">
+            Experience Star Tech App on your mobile:
+          </h5>
+          <div class="flex justify-center gap-5">
+            <a
+              class="flex items-center gap-4 border border-[#838383] hover:border-white px-4 py-2 rounded-lg"
+              href="https://play.google.com/store/apps/details?id=com.startech.shop"
+              target="_blank"
+              rel="noopener"
+              title="Star Tech Android APP"
+            >
+              <i class="fa-brands text-xl lg:text-2xl fa-google-play"></i>
+              <div class="app-link-text">
+                <div class="text-xs text-[#838383]">Download on</div>
+                <div class="app-store text-sm font-bold lg:text-base">
+                  Google Play
+                </div>
+              </div>
+            </a>
+            <a
+              class="flex items-center gap-4 border border-[#838383] hover:border-white px-4 py-2 rounded-lg"
+              class="app-link"
+              href="https://apps.apple.com/app/id6443544088"
+              target="_blank"
+              rel="noopener"
+              title="Star Tech ISO APP"
+            >
+              <i class="fa-brands text-xl lg:text-2xl fa-app-store-ios"></i>
+              <div>
+                <div class="">
+                  <div class="text-xs text-[#838383]">Download on</div>
+                  <div class="app-store text-sm font-bold lg:text-base">
+                    App Store
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex my-6 lg:my-0 space-x-4 justify-center">
+          <a
+            href="https://whatsapp.com/channel/0029VaSRMY9AO7RINROxvC3u"
+            target="_blank"
+            rel="noopener"
+            title="Whatsapp"
+          >
+            <span
+              class="bg-[#838383] hover:bg-[#0D8BF0] rounded-full w-10 h-10 flex items-center justify-center text-white transition-all duration-300"
+            >
+              <i class="fa-brands fa-whatsapp text-xl leading-none"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.facebook.com/star.tech.ltd/"
+            target="_blank"
+            rel="noopener"
+            title="Facebook"
+          >
+            <span
+              class="bg-[#838383] hover:bg-[#0D8BF0] rounded-full w-10 h-10 flex items-center justify-center text-white transition-all duration-300"
+            >
+              <i class="fa-brands fa-facebook-f text-xl leading-none"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UC-SDF_4DM3unoP7JeAodz2g"
+            target="_blank"
+            rel="noopener"
+            title="Youtube"
+          >
+            <span
+              class="bg-[#838383] hover:bg-[#0D8BF0] rounded-full w-10 h-10 flex items-center justify-center text-white transition-all duration-300"
+            >
+              <i class="fa-brands fa-youtube text-xl leading-none"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.instagram.com/startech.com.bd/"
+            target="_blank"
+            rel="noopener"
+            title="Instagram"
+          >
+            <span
+              class="bg-[#838383] hover:bg-[#0D8BF0] rounded-full w-10 h-10 flex items-center justify-center text-white transition-all duration-300"
+            >
+              <i class="fa-brands fa-instagram text-xl leading-none"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="lg:flex text-center text-[#838383] p-4 max-w-[1440px] mx-auto justify-between"
+      >
+        <div class="">
+          <p>© 2024 Star Tech Ltd | All rights reserved</p>
+        </div>
+        <div class="">
+          <p>Powered By: Star Tech</p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
